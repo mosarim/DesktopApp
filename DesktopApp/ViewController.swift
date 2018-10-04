@@ -10,6 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    
+    @IBOutlet weak var nameText: UITextField!
+    
+    @IBAction func submitButton(_ sender: UIButton) {
+        displayText.text! = "hello " + nameText.text!
+    }
+    
+    @IBOutlet weak var displayText: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
